@@ -77,6 +77,10 @@ if(BUILD_PLAY)
 		if(TARGET_PLATFORM_JS)
 			add_subdirectory(Source/ui_js)
 		endif(TARGET_PLATFORM_JS)
+		
+		if(TARGET_PLATFORM_VITA)
+			add_subdirectory(Source/ui_vita/)
+		endif(TARGET_PLATFORM_VITA)
 	endif()
 endif(BUILD_PLAY)
 
